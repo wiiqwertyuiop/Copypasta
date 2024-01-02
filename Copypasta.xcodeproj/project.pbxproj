@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1385A43F2B3F4171008374D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1385A43E2B3F4171008374D4 /* Assets.xcassets */; };
+		1385A4452B3F4172008374D4 /* Copypasta MessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1385A4442B3F4172008374D4 /* Copypasta MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1385A44A2B3F4172008374D4 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1385A4492B3F4172008374D4 /* Messages.framework */; };
+		1385A44D2B3F4172008374D4 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385A44C2B3F4172008374D4 /* MessagesViewController.swift */; };
+		1385A4502B3F4172008374D4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1385A44E2B3F4172008374D4 /* MainInterface.storyboard */; };
+		1385A4522B3F4174008374D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1385A4512B3F4174008374D4 /* Assets.xcassets */; };
+		1385A4612B3FF86D008374D4 /* Copypasta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1385A45F2B3FF86D008374D4 /* Copypasta.xcdatamodeld */; };
+		1385A4632B407399008374D4 /* PastaDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385A4622B407399008374D4 /* PastaDatabase.swift */; };
+		1385A4E22B412D46008374D4 /* PastaEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1385A4E12B412D46008374D4 /* PastaEntryViewController.swift */; };
+		139343942B447DC300CE6E59 /* CopypastaUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139343932B447DC300CE6E59 /* CopypastaUIButton.swift */; };
+		139343962B448B7200CE6E59 /* AddNewPastaUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139343952B448B7200CE6E59 /* AddNewPastaUIButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1385A4462B3F4172008374D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1385A4352B3F416E008374D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1385A4432B3F4172008374D4;
+			remoteInfo = "Copypasta MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1385A4592B3F4174008374D4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1385A4452B3F4172008374D4 /* Copypasta MessagesExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1385A43B2B3F416F008374D4 /* Copypasta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copypasta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1385A43E2B3F4171008374D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1385A4442B3F4172008374D4 /* Copypasta MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Copypasta MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1385A4492B3F4172008374D4 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		1385A44C2B3F4172008374D4 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		1385A44F2B3F4172008374D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1385A4512B3F4174008374D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1385A4532B3F4174008374D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1385A4602B3FF86D008374D4 /* Copypasta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Copypasta.xcdatamodel; sourceTree = "<group>"; };
+		1385A4622B407399008374D4 /* PastaDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaDatabase.swift; sourceTree = "<group>"; };
+		1385A4E12B412D46008374D4 /* PastaEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaEntryViewController.swift; sourceTree = "<group>"; };
+		139343932B447DC300CE6E59 /* CopypastaUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopypastaUIButton.swift; sourceTree = "<group>"; };
+		139343952B448B7200CE6E59 /* AddNewPastaUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPastaUIButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1385A4412B3F4172008374D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1385A44A2B3F4172008374D4 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1385A4342B3F416E008374D4 = {
+			isa = PBXGroup;
+			children = (
+				1385A43D2B3F416F008374D4 /* Copypasta */,
+				1385A44B2B3F4172008374D4 /* Copypasta MessagesExtension */,
+				1385A4482B3F4172008374D4 /* Frameworks */,
+				1385A43C2B3F416F008374D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1385A43C2B3F416F008374D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1385A43B2B3F416F008374D4 /* Copypasta.app */,
+				1385A4442B3F4172008374D4 /* Copypasta MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1385A43D2B3F416F008374D4 /* Copypasta */ = {
+			isa = PBXGroup;
+			children = (
+				1385A43E2B3F4171008374D4 /* Assets.xcassets */,
+			);
+			path = Copypasta;
+			sourceTree = "<group>";
+		};
+		1385A4482B3F4172008374D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1385A4492B3F4172008374D4 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1385A44B2B3F4172008374D4 /* Copypasta MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				139343952B448B7200CE6E59 /* AddNewPastaUIButton.swift */,
+				139343932B447DC300CE6E59 /* CopypastaUIButton.swift */,
+				1385A4622B407399008374D4 /* PastaDatabase.swift */,
+				1385A4E12B412D46008374D4 /* PastaEntryViewController.swift */,
+				1385A44C2B3F4172008374D4 /* MessagesViewController.swift */,
+				1385A44E2B3F4172008374D4 /* MainInterface.storyboard */,
+				1385A4512B3F4174008374D4 /* Assets.xcassets */,
+				1385A4532B3F4174008374D4 /* Info.plist */,
+				1385A45F2B3FF86D008374D4 /* Copypasta.xcdatamodeld */,
+			);
+			path = "Copypasta MessagesExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1385A43A2B3F416F008374D4 /* Copypasta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1385A45A2B3F4174008374D4 /* Build configuration list for PBXNativeTarget "Copypasta" */;
+			buildPhases = (
+				1385A4392B3F416F008374D4 /* Resources */,
+				1385A4592B3F4174008374D4 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1385A4472B3F4172008374D4 /* PBXTargetDependency */,
+			);
+			name = Copypasta;
+			productName = Copypasta;
+			productReference = 1385A43B2B3F416F008374D4 /* Copypasta.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		1385A4432B3F4172008374D4 /* Copypasta MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1385A4562B3F4174008374D4 /* Build configuration list for PBXNativeTarget "Copypasta MessagesExtension" */;
+			buildPhases = (
+				1385A4402B3F4172008374D4 /* Sources */,
+				1385A4412B3F4172008374D4 /* Frameworks */,
+				1385A4422B3F4172008374D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Copypasta MessagesExtension";
+			productName = "Copypasta MessagesExtension";
+			productReference = 1385A4442B3F4172008374D4 /* Copypasta MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1385A4352B3F416E008374D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1385A43A2B3F416F008374D4 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					1385A4432B3F4172008374D4 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 1385A4382B3F416E008374D4 /* Build configuration list for PBXProject "Copypasta" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1385A4342B3F416E008374D4;
+			productRefGroup = 1385A43C2B3F416F008374D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1385A43A2B3F416F008374D4 /* Copypasta */,
+				1385A4432B3F4172008374D4 /* Copypasta MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1385A4392B3F416F008374D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1385A43F2B3F4171008374D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1385A4422B3F4172008374D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1385A4522B3F4174008374D4 /* Assets.xcassets in Resources */,
+				1385A4502B3F4172008374D4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1385A4402B3F4172008374D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139343962B448B7200CE6E59 /* AddNewPastaUIButton.swift in Sources */,
+				1385A4612B3FF86D008374D4 /* Copypasta.xcdatamodeld in Sources */,
+				1385A4632B407399008374D4 /* PastaDatabase.swift in Sources */,
+				139343942B447DC300CE6E59 /* CopypastaUIButton.swift in Sources */,
+				1385A4E22B412D46008374D4 /* PastaEntryViewController.swift in Sources */,
+				1385A44D2B3F4172008374D4 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1385A4472B3F4172008374D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1385A4432B3F4172008374D4 /* Copypasta MessagesExtension */;
+			targetProxy = 1385A4462B3F4172008374D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1385A44E2B3F4172008374D4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1385A44F2B3F4172008374D4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1385A4542B3F4174008374D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1385A4552B3F4174008374D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1385A4572B3F4174008374D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GB7FX25JDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copypasta MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypasta;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wiiq.Copypasta.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1385A4582B3F4174008374D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GB7FX25JDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Copypasta MessagesExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Copypasta;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wiiq.Copypasta.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1385A45B2B3F4174008374D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GB7FX25JDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wiiq.Copypasta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1385A45C2B3F4174008374D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GB7FX25JDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wiiq.Copypasta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1385A4382B3F416E008374D4 /* Build configuration list for PBXProject "Copypasta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1385A4542B3F4174008374D4 /* Debug */,
+				1385A4552B3F4174008374D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1385A4562B3F4174008374D4 /* Build configuration list for PBXNativeTarget "Copypasta MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1385A4572B3F4174008374D4 /* Debug */,
+				1385A4582B3F4174008374D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1385A45A2B3F4174008374D4 /* Build configuration list for PBXNativeTarget "Copypasta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1385A45B2B3F4174008374D4 /* Debug */,
+				1385A45C2B3F4174008374D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1385A45F2B3FF86D008374D4 /* Copypasta.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1385A4602B3FF86D008374D4 /* Copypasta.xcdatamodel */,
+			);
+			currentVersion = 1385A4602B3FF86D008374D4 /* Copypasta.xcdatamodel */;
+			path = Copypasta.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1385A4352B3F416E008374D4 /* Project object */;
+}
